@@ -734,14 +734,14 @@
 <span class="sd">    Using :code: &#39;ivy.Array&#39; instance method:</span>
 <span class="sd">    </span>
 <span class="sd">    &gt;&gt;&gt; x = ivy.array([[0, 1, 2], [3, 4, 5], [6, 7, 8]])</span>
-<span class="sd">    &gt;&gt;&gt; y = ivy.x.einsum(ii)</span>
+<span class="sd">    &gt;&gt;&gt; y = x.einsum(&#39;ii&#39;)</span>
 <span class="sd">    ivy.array(12)</span>
 
 <span class="sd">    Using :code: &#39;ivy.Container&#39; instance method:</span>
 <span class="sd">    </span>
 <span class="sd">    &gt;&gt;&gt; x = ivy.Container(a=ivy.array([[0, 1, 0],[1, 1, 0],[1, 1, 1]]),\</span>
 <span class="sd">                          b=ivy.array([[0, 1, 2],[4, 5, 6],[8, 9, 10]]))</span>
-<span class="sd">    &gt;&gt;&gt; y = x.einsum(ii)</span>
+<span class="sd">    &gt;&gt;&gt; y = x.einsum(&#39;ii&#39;)</span>
 <span class="sd">    &gt;&gt;&gt; print(y)</span>
 <span class="sd">    {</span>
 <span class="sd">        a: ivy.array(2, dtype=float32),</span>
